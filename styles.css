@@ -43,16 +43,12 @@
 }
 .call-to-action a {
     padding: 20px 30px;
-    margin: 5px;
     border-radius: 100px;
     text-decoration: none;
 }
 .other-content{
     background-color: white;
     color: gray;
-    height: 50px;
-    width: 50px;
-    display: inline;
     border: 2px solid gray;
     text-transform: uppercase;
     font-weight: bold;
@@ -61,4 +57,20 @@
     background-color: gray;
     color: white;
     display: inline;
+}
+
+@media screen and (max-width: 800px) {
+	.call-to-action a {
+		display: block;
+    }
+    .other-content {
+			text-transform: none;
+            padding-top: 0px !important;
+            height: 40%;
+    }
+	
+
+	body {
+		background-color: lightblue;
+	}
 }
